@@ -9,9 +9,7 @@ function loadPart(file) {
             console.error(error);
         });
 
-    tsParticles.setOnClickHandler((event, particles) => {
-        /* custom on click handler */
-    });
+    document.querySelector("#tsparticles > canvas").style.zIndex = -1;
     particles.play();
 }
 
